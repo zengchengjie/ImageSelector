@@ -208,7 +208,8 @@ public class MainActivity extends Activity implements ListImageDirPopupWindow.On
 						// 初始化imageFloder
 						imageFloder = new ImageFloder();
 						imageFloder.setDir(dirPath);
-						imageFloder.setFirstImagePath(path);
+//						imageFloder.setFirstImagePath(path);
+						imageFloder.setFirstImagePath(firstImage);
 					}
 
 					int picSize = parentFile.list(new FilenameFilter()
