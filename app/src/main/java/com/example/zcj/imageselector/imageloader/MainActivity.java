@@ -104,7 +104,7 @@ public class MainActivity extends Activity implements ListImageDirPopupWindow.On
 				R.layout.grid_item, mImgDir.getAbsolutePath());
 		mGirdView.setAdapter(mAdapter);
 		mImageCount.setText(totalCount + "张");
-	};
+	}
 
 	/**
 	 * 初始化展示文件夹的popupWindw
@@ -208,8 +208,7 @@ public class MainActivity extends Activity implements ListImageDirPopupWindow.On
 						// 初始化imageFloder
 						imageFloder = new ImageFloder();
 						imageFloder.setDir(dirPath);
-//						imageFloder.setFirstImagePath(path);
-						imageFloder.setFirstImagePath(firstImage);
+						imageFloder.setFirstImagePath(path);
 					}
 
 					int picSize = parentFile.list(new FilenameFilter()
