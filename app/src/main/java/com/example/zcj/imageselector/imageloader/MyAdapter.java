@@ -5,6 +5,7 @@ import java.util.List;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
@@ -73,7 +74,7 @@ public class MyAdapter extends CommonAdapter<String>
 
 			}
 		});
-		
+		Log.d("listTest","SelectImage: "+mSelectedImage.size()+"      "+mSelectedImage);
 		/**
 		 * 已经选择过的图片，显示出选择过的效果
 		 */

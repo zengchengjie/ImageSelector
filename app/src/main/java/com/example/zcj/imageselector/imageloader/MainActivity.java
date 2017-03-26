@@ -118,7 +118,6 @@ public class MainActivity extends Activity implements ListImageDirPopupWindow.On
 
 		mListImageDirPopupWindow.setOnDismissListener(new OnDismissListener()
 		{
-
 			@Override
 			public void onDismiss()
 			{
@@ -161,7 +160,6 @@ public class MainActivity extends Activity implements ListImageDirPopupWindow.On
 		}
 		// 显示进度条
 		mProgressDialog = ProgressDialog.show(this, null, "正在加载...");
-
 		new Thread(new Runnable()
 		{
 			@Override
@@ -187,7 +185,6 @@ public class MainActivity extends Activity implements ListImageDirPopupWindow.On
 					// 获取图片的路径
 					String path = mCursor.getString(mCursor
 							.getColumnIndex(MediaStore.Images.Media.DATA));
-
 					Log.e("TAG", path);
 					// 拿到第一张图片的路径
 					if (firstImage == null)
@@ -285,7 +282,6 @@ public class MainActivity extends Activity implements ListImageDirPopupWindow.On
 	@Override
 	public void selected(ImageFloder floder)
 	{
-
 		mImgDir = new File(floder.getDir());
 		mImgs = Arrays.asList(mImgDir.list(new FilenameFilter()
 		{
